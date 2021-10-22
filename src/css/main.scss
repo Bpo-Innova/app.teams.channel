@@ -1,10 +1,36 @@
 // Definir variaveis de cores
-$color: #807577;
+$meuRH: #040404;
+$targon: #0f5941;
+$main: #f8f9fa;
 
 // Inserir cores no Bootstrap
 $theme-colors: (
-    'color': $color,
+    'meuRH': $meuRH,
+    'targon': $targon,
+    'main': $main,
 );
+
+.borderRadius {
+    border-radius: 18px !important;
+}
+
+.card-img-top{
+    border-top-left-radius: 18px !important;
+    border-top-right-radius: 18px !important;
+}
+
+.card-animate {
+    -webkit-transition: .3s;
+    transition: .3s;
+    }
+    .transition {
+    -webkit-transition: .3s;
+    transition: .3s;
+    }
+    .card-animate:hover {
+    -webkit-box-shadow: 0px 2px 22px #bebebe;
+    box-shadow: 0px 2px 22px #bebebe;
+    }
 
 // Torna a fonte responsiva. Por padrão, vem desativada.
 $enable-responsive-font-sizes: true !default;
