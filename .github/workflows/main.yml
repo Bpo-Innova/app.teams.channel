@@ -1,9 +1,9 @@
 on:
   push:
-    paths:
-      - 'src/'
     branches:
       - master
+        paths:
+          - 'src/'
 name: 🚀 Deploy website on push
 jobs:
   web-deploy:
