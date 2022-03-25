@@ -18,6 +18,34 @@
 </head>
 
 <body class="py-5 bg-main">
+
+  <!-- Modal -->
+<div class="modal fade" id="alertModal" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="alertModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="alertModalLabel">
+            Política do Sistema de Gestão de Segurança da Informação na BPO Innova
+          </h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            <div class="text-center w-100">
+                <img src="src/img/banners/sgsi.jpg" alt="" class="img-fluid">
+            </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+          <a href="https://bpoinnova.sharepoint.com/seginfo/SitePages/Divulga%C3%A7%C3%A3o-Politicas-de-Seguran%C3%A7a.aspx" class="btn btn-primary">
+            <i class="fas fa-user-lock"></i>
+            Ver políticas de segurança
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
     <main class="container">
         <section id="main" class="mb-3">
             <div class="row">
@@ -26,6 +54,9 @@
                         <div class="carousel-inner">
                             <div class="carousel-item">
                                 <img src="src/img/banners/welcome.png" class="d-block w-100 borderRadius" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="src/img/banners/sgsi.jpg" class="d-block w-100 borderRadius" alt="...">
                             </div>
                             <div class="carousel-item active">
                                 <img src="src/img/banners/seguranca.jpg" class="d-block w-100 borderRadius" alt="...">
@@ -298,6 +329,9 @@
     <script src="src/js/jquery.min.js"></script>
     <script src="src/js/popper.min.js"></script>
     <script src="src/js/bootstrap.min.js"></script>
+    <script>
+        $('#alertModal').modal('show')
+    </script>
 </body>
 
 </html>
